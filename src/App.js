@@ -6,6 +6,7 @@ import Plan from './components/plan';
 function App() {
   return (
     <>
+      <Initial/>
       <Plan/>
     </>
   );

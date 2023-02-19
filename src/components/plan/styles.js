@@ -1,7 +1,31 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import {patchcord} from './imgs/patchcord.jpg'
 
+
+
+const shimmerEffect = keyframes`
+  0% {
+    background-position: 0%;
+  }
+  25% {
+    background-position: -50%;
+  }
+  50% {
+    background-position: -100%;
+  }
+  75% {
+    background-position: -150%;
+  }
+  100% {
+    background-position: -200%;
+  }
+`
 export const Container = styled.div`
-  background-color: #101324;
+  *{
+    color: white;
+  }
+  background: url({patchcord});
+  background-repeat: no-repeat;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -35,7 +59,10 @@ export const Plano = styled.div`
 
   border-radius: 30px;
 
-  background-color: #cacaca;
+  background: linear-gradient(90deg, #101324 0%, #151930 40%, #101324 100%, #161B33);
+  animation: ${shimmerEffect} 10s linear infinite;
+  background-size: 300%;
+
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -43,11 +70,8 @@ export const Plano = styled.div`
   align-items: center;
 
   fieldset {
-    strong {
-      color: orange;
-    }
     border-radius: 15px;
-    background-color: gray;
+    background: linear-gradient(#1B1B21, #808080);
   }
 `;
 export const Icon = styled.img`
@@ -81,12 +105,13 @@ export const Contratar = styled.button`
   margin: 1.5em auto;
 
   border-radius: 7px;
-  background-color: #ffd22c;
+  background: linear-gradient(90deg, #DB0000, #750000, #DB0000);
+  background-size: 200%;
+  animation: ${shimmerEffect} 10s linear infinite;
   padding: 0;
 
   div {
     border-radius: 0 5px 5px 0;
-    background-color: #e8a71c;
     width: 40px;
     height: 100%;
     display: flex;
