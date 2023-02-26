@@ -16,37 +16,30 @@ const shimmerEffect = keyframes`
 `;
 
 export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
-
-  background: linear-gradient(90deg, #101324 0%, #151930 40%, #101324 100%, #161B33);
+  background: linear-gradient(
+    90deg,
+    #101324 0%,
+    #151930 40%,
+    #101324 100%,
+    #161b33
+  );
   animation: ${shimmerEffect} 10s linear infinite;
   background-size: 300%;
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: end;
+  align-items: start;
 `;
 export const Logo = styled.img`
-  width: 440px;
-  height: 120px;
-  @media (max-width: 480px) {
-    width: 220px;
-    height: 90px;
-  }
-
-  @media (min-width: 481px) and (max-width: 780px) {
-    width: 300px;
-    height: 110px;
-  }
-
-  @media (min-width: 781px) and (max-width: 1024px) {
-    width: 380px;
-    height: 120px;
-  }
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 100px;
+  height: 40px;
 `;
 export const Acessar = styled.button`
+  margin: 15px 30px;
   width: 140px;
   height: 40px;
   border-radius: 10px;
@@ -56,6 +49,4 @@ export const Acessar = styled.button`
   background-color: rgb(0, 0, 0, 0.15);
 
   font-size: 20px;
-
-  margin: 55px;
 `;

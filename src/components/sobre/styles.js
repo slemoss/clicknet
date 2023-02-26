@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
-  min-height: 100vh;
-  padding: 60px 0px 120px 0px;
 
   display: flex;
   flex-direction: column;
@@ -34,7 +31,6 @@ export const SubTitulo = styled.h2`
 `;
 export const SubTituloF = styled.h2`
   font-size: 1em;
-  margin-top: 50px;
 `;
 export const AreaTexto = styled.div`
   display: flex;

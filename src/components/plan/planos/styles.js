@@ -77,11 +77,13 @@ export const Valor = styled.h1`
 `;
 export const Contratar = styled.button`
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
   width: 10em;
   height: 3em;
   margin: 1.5em auto;
+  position: relative;
+  border: 2px solid black;
 
   border-radius: 7px;
   background: linear-gradient(90deg, #DB0000, #750000, #DB0000);
@@ -90,6 +92,8 @@ export const Contratar = styled.button`
   padding: 0;
 
   div {
+    position: absolute;
+    right: 0.1px;
     border-radius: 0 5px 5px 0;
     width: 40px;
     height: 100%;

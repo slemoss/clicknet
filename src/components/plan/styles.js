@@ -5,7 +5,6 @@ export const Container = styled.div`
     color: white;
   }
   background: linear-gradient(#1B1B21, #808080);
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
