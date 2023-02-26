@@ -1,95 +1,18 @@
 import React from "react";
-import { Plano, Container, Icon, Info, Valor, Contratar, Vantagens } from "./styles";
+import { Container } from "./styles";
+import Planos from "./planos";
 import Iicon from './imgs/0.png'
-import {BsCartCheckFill} from 'react-icons/bs'
+import Iicon1 from './imgs/1.png'
+import Iicon2 from './imgs/2.png'
+import Iicon3 from './imgs/4.png'
 
-export default function Plan(){
-  return(
-      <Container>
-        <Plano>
-          <Icon src={Iicon}/>
-          <Info>
-            Plano Básico 100 Megas
-          </Info>
-          <Valor>R$69,90</Valor>
-          por mês
-          <hr/>
-
-          <fieldset>
-          <legend>Vantagens</legend>
-          <Vantagens>
-            100mbps de download <br/>
-            50mbps de upload <br/>
-            conexão fibra óptica <br/>
-          </Vantagens>
-
-          </fieldset>
-          
-          <Contratar>Contratar <div><BsCartCheckFill size={18}/></div></Contratar>
-        </Plano>
-        <Plano>
-          <Icon src={Iicon}/>
-          <Info>
-            Plano Básico 100 Megas
-          </Info>
-          <Valor>R$69,90</Valor>
-          por mês
-          <hr/>
-
-          <fieldset>
-          <legend>Vantagens</legend>
-          <Vantagens>
-            100mbps de download <br/>
-            50mbps de upload <br/>
-            conexão fibra óptica <br/>
-          </Vantagens>
-
-          </fieldset>
-          
-          <Contratar>Contratar <div><BsCartCheckFill size={18}/></div></Contratar>
-        </Plano>
-        <Plano>
-          <Icon src={Iicon}/>
-          <Info>
-            Plano Básico 100 Megas
-          </Info>
-          <Valor>R$69,90</Valor>
-          por mês
-          <hr/>
-
-          <fieldset>
-          <legend>Vantagens</legend>
-          <Vantagens>
-            100mbps de download <br/>
-            50mbps de upload <br/>
-            conexão fibra óptica <br/>
-          </Vantagens>
-
-          </fieldset>
-          
-          <Contratar>Contratar <div><BsCartCheckFill size={18}/></div></Contratar>
-        </Plano>
-        <Plano>
-          <Icon src={Iicon}/>
-          <Info>
-            Plano Básico 100 Megas
-          </Info>
-          <Valor>R$69,90</Valor>
-          por mês
-          <hr/>
-
-          <fieldset>
-          <legend>Vantagens</legend>
-          <Vantagens>
-            100mbps de download <br/>
-            50mbps de upload <br/>
-            conexão fibra óptica <br/>
-          </Vantagens>
-
-          </fieldset>
-          
-          <Contratar>Contratar <div><BsCartCheckFill size={18}/></div></Contratar>
-        </Plano>
-      </Container>
-  )
+export default function Plan() {
+  return (
+    <Container>
+      <Planos foto1={Iicon} valor={'69,90'} plano={100}/>
+      <Planos foto1={Iicon1} valor={'89,90'} plano={200}/>
+      <Planos foto1={Iicon2} valor={'99,90'} plano={300}/>
+      <Planos foto1={Iicon3} valor={'129,90'} plano={500}/>
+    </Container>
+  );
 }
