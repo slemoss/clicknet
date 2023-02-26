@@ -4,10 +4,13 @@ import LogoCk from './imgs/logo-nova.png'
 
 
 export default function Initial() {
+  const renatinha = () => {
+    alert('Renatinha enlouqueceu')
+  }
   return(
     <Container>
       <Logo src={LogoCk}/>
-      <Acessar> Acessar </Acessar>
+      <Acessar onClick={renatinha}> Acessar </Acessar>
       
     </Container>
   )
